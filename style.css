@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+
+/* Заголовки */
+
+h1 {
+    margin-bottom: 5px;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+h3 {
+    margin-top: 25px;
+}
+
+
+/* Завдання 1 */
+
+table {
+    width: 100%;
+    max-width: 1200px;
+
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+td {
+    border: 2px solid black;
+
+    height: 100px;
+
+    text-align: center;
+    vertical-align: middle;
+
+    font-size: 24px;
+
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+/* Колір першого рядка #nn8f8f, де nn = 79 */
+
+.first-color {
+    background-color: #798f8f;
+    color: white;
+}
+
+
+/* Колір другого рядка #f5f5nn, де nn = 79 */
+
+.second-color {
+    background-color: #f5f579;
+    color: black;
+}
+
+
+/* При наведенні кольори міняються місцями */
+
+.table-wrapper:hover .first-color {
+    background-color: #f5f579;
+    color: black;
+}
+
+.table-wrapper:hover .second-color {
+    background-color: #798f8f;
+    color: white;
+}
+
+
+/*Завдання 2*/
+
+.task-title {
+    margin-top: 60px;
+}
+
+
+/*1. За допомогою position*/
+
+.picture-position {
+    width: 540px;
+    height: 350px;
+
+    border: 3px solid gray;
+
+    position: relative;
+
+    margin-bottom: 50px;
+}
+
+.circle-position {
+    width: 210px;
+    height: 210px;
+
+    background-color: red;
+
+    border-radius: 50%;
+
+    position: absolute;
+
+    top: 70px;
+    left: 165px;
+}
+
+
+/* 2. За допомогою transform*/
+
+.picture-transform {
+    width: 540px;
+    height: 350px;
+
+    border: 3px solid gray;
+
+    position: relative;
+
+    margin-bottom: 50px;
+}
+
+.circle-transform {
+    width: 210px;
+    height: 210px;
+
+    background-color: red;
+
+    border-radius: 50%;
+
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
